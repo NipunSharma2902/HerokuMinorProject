@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Predictor</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <a href="#"><img src="{{ url_for('static',filename='images/logo.png') }}" alt=""></a>
+        <ul id="menu">
+            <li class="navbar_links"><a href="#home">Home</a></li>
+            <li class="navbar_links"><a href="#stock">Stock Market</a></li>
+            <li class="navbar_links"><a href="#prediction">Prediction</a></li>
+            <li class="navbar_links"><a href="#news">News</a></li>
+            <li class="navbar_links"><a href="#about">Contact Us</a></li>
+        </ul>
+    </header>
+
+    
+    <section id="home">
+        
+        
+        <h1 style="font-size: 1.5cm;
+         text-align: center;">
+
+         Stock Market Monitor And Predictor
+
+        </h1>
+    </section>
+
+
+
+    <section id="stock">
+      <br><br><br><br><br>
+      <div class="section_heading">
+        <u>Live Stock Charts</u>
+      </div>
+    <br><br>
+    
+<div class="row">
+<!--1st Widget BEGIN -->
+<div class="column">
+<div class="card">
+
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:AAPL",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "12M",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(41, 98, 255, 1)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+  </div>
+  <!--1st Widget END -->
+
+
+<!--2nd Widget Begins-->
+  <div class="column">
+  <div class="card">
+    
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:MSFT",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "12M",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(159, 197, 232, 1)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+  </div>
+<!--2nd Widget Ends-->
+
+
+<!--3rd Widget Begins-->
+  <div class="column">
+  <div class="card">
+        
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+    {
+    "symbol": "NASDAQ:AMZN",
+    "width": 350,
+    "height": 220,
+    "locale": "en",
+    "dateRange": "12M",
+    "colorTheme": "dark",
+    "trendLineColor": "rgba(159, 197, 232, 1)",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": true,
+    "autosize": false,
+    "largeChartUrl": ""
+  }
+    </script>
+  </div>
+</div>
+<!--3rd Widget Ends-->
+</div>
+
+<div class="row">
+<!--4th Widget Begins-->
+<div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:FB",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--4th Widget Ends-->
+
+  <!--5th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:GOOG",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--5th Widget Ends-->
+
+  <!--6th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "NASDAQ:TSLA",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--6th Widget Ends-->
+</div>
+
+<div class="row">
+  <!--7th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BSE:SENSEX",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--7th Widget Ends-->
+
+  <!--8th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BINANCE:BTCUSDT",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+  <!--8th Widget Ends-->
+
+  <!--9th Widget Begins-->
+  <div class="column">
+    <div class="card">
+          
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+      {
+      "symbol": "BINANCE:ETHUSDT",
+      "width": 350,
+      "height": 220,
+      "locale": "en",
+      "dateRange": "12M",
+      "colorTheme": "dark",
+      "trendLineColor": "rgba(159, 197, 232, 1)",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": true,
+      "autosize": false,
+      "largeChartUrl": ""
+    }
+      </script>
+    </div>
+  </div>
+<!--9th Widget Ends-->
+</div>
+        
+        
+    </section>
+
+
+    <section id="prediction">
+      
+      <br><br><br><br><br>
+      <div class="section_heading">
+        <u>Predictions for upcoming month</u>
+      </div>
+    
+
+
+      <div class="container">
+
+      <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Google')">Google</button>
+  <button class="tablinks" onclick="openCity(event, 'Microsoft')">Microsoft</button>
+  <button class="tablinks" onclick="openCity(event, 'Netflix')">Netflix</button>
+</div>
+
+<!-- Tab content -->
+<div id="Google" class="tabcontent">
+  <embed type='text/html' src="{{ url_for('static', filename='GOOG.html') }}" height="450" width="970">
+</div>
+
+<div id="Microsoft" class="tabcontent">
+  <embed type='text/html' src="{{ url_for('static', filename='MSFT.html') }}" height="450" width="970">
+</div>
+
+<div id="Netflix" class="tabcontent">
+  <embed type='text/html' src="{{ url_for('static', filename='NFLX.html') }}" height="450" width="970">
+</div>
+
+</div>
+ 
+    </section>
+
+
+
+
+    <section id="news">
+      <br><br><br><br><br>
+      <div class="section_heading">
+        <u>Daily Finance News</u>
+      </div>
+             
+      <ul>
+      {% for i in range(0,2) %}
+        <div class="row">
+        {% for j in range(0,1) %}
+          {% set x = (i*4)+j %}
+          <div class="column">
+          <li>
+            <div class="head">
+              <u><b> {{ article_head[x][:50] }}... </b></u>
+            </div>
+
+            <br>
+
+            <div class="desc">
+            {{ article_description[x][:200] }}....
+            </div>
+            
+            <br><br><br>
+            
+            <div class="read">
+            <a href="{{ article_link[x] }}" target="_blank">
+              <b>Read More</b>
+            </a>
+          </div>
+
+          </li>
+        </div>
+        
+        {% endfor %}
+        </div>
+      {% endfor %}
+      </ul>
+
+      
+  </section>
+
+
+
+
+
+    <section id="about">
+
+      <br><br><br><br><br>
+      <div class="section_heading">
+        <u>Our Team</u>
+      </div>
+      <br>
+
+<br><br>
+
+    </section>
+
+</body>
+
+</html>
